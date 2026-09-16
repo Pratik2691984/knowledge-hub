@@ -3,198 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Daily Curious Minds | Science, Logic &amp; Philosophy</title>
-
+  <title>Daily Curious Minds | Science, Logic & Philosophy</title>
   <link rel="canonical" href="https://pratik2691984.github.io/knowledge-hub/" />
   <meta name="description" content="Distilled daily insights in quantum mechanics, psychology, game theory, and philosophy. Tap into free curiosity." />
   <meta name="theme-color" content="#0b0f19" />
-
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Daily Curious Minds" />
   <meta property="og:url" content="https://pratik2691984.github.io/knowledge-hub/" />
-  <meta property="og:title" content="Daily Curious Minds — Science, Logic &amp; Insight Bytes" />
+  <meta property="og:title" content="Daily Curious Minds — Science, Logic & Insight Bytes" />
   <meta property="og:description" content="Explore daily fascinating concepts in quantum physics, logic, and philosophy. Free knowledge for curious minds." />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop" />
   <meta property="og:image:alt" content="Earth from space — a reminder of scale and curiosity" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:locale" content="en_US" />
-
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Daily Curious Minds — Science, Logic &amp; Insight Bytes" />
+  <meta name="twitter:title" content="Daily Curious Minds — Science, Logic & Insight Bytes" />
   <meta name="twitter:description" content="Explore daily concepts in quantum physics, logic, and philosophy." />
-  <meta name="twitter:image" content="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop" />
   <meta name="twitter:image:alt" content="Earth from space — a reminder of scale and curiosity" />
-
   <style>
-    :root {
-      --bg: #0b0f19;
-      --card: #151c2e;
-      --border: #243049;
-      --text: #f1f5f9;
-      --text-muted: #94a3b8;
-      --accent: #38bdf8;
-      --bmc-yellow: #FFDD00;
-      --bmc-text: #000000;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html { -webkit-text-size-adjust: 100%; }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      padding-bottom: 120px;
-    }
-
-    header {
-      background: var(--card);
-      border-bottom: 1px solid var(--border);
-      padding: 28px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: clamp(1.4rem, 4vw, 1.8rem);
-      letter-spacing: -0.5px;
-      color: #ffffff;
-    }
-
-    header p {
-      color: var(--text-muted);
-      font-size: 0.95rem;
-      margin-top: 6px;
-    }
-
-    .container {
-      max-width: 680px;
-      margin: 32px auto;
-      padding: 0 16px;
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-    }
-
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 24px;
-      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
-    }
-
-    .card-tag {
-      display: inline-block;
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.8px;
-      font-weight: 700;
-      color: var(--accent);
-      margin-bottom: 10px;
-    }
-
-    .card h2 {
-      font-size: 1.3rem;
-      margin-bottom: 12px;
-      color: #fff;
-    }
-
-    .card p {
-      color: var(--text-muted);
-      font-size: 0.96rem;
-      margin-bottom: 16px;
-    }
-
-    .btn-group {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      margin-top: 8px;
-    }
-
-    button {
-      background: #1e293b;
-      color: var(--text);
-      border: 1px solid var(--border);
-      padding: 11px 14px;
-      border-radius: 8px;
-      font-size: 0.9rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.2s ease;
-    }
-
-    button:hover {
-      background: #334155;
-      border-color: var(--accent);
-    }
-
-    button.primary {
-      background: rgba(56, 189, 248, 0.15);
-      border-color: var(--accent);
-      color: var(--accent);
-    }
-
-    button.primary:hover {
-      background: rgba(56, 189, 248, 0.25);
-    }
-
-    .bmc-floating-btn {
-      position: fixed;
-      bottom: max(16px, env(safe-area-inset-bottom));
-      right: max(16px, env(safe-area-inset-right));
-      background: var(--bmc-yellow);
-      color: var(--bmc-text);
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 0.92rem;
-      padding: 12px 20px;
-      border-radius: 50px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      z-index: 1000;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .bmc-floating-btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 10px 26px rgba(255, 221, 0, 0.45);
-    }
-
-    .bmc-floating-btn svg {
-      width: 20px;
-      height: 20px;
-      fill: currentColor;
-      flex-shrink: 0;
-    }
-
-    #copy-toast {
-      position: fixed;
-      bottom: 88px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: rgba(15, 23, 42, 0.95);
-      border: 1px solid var(--accent);
-      color: var(--text);
-      padding: 8px 16px;
-      border-radius: 20px;
-      font-size: 0.85rem;
-      display: none;
-      z-index: 1000;
-      max-width: calc(100% - 32px);
-      text-align: center;
-    }
-
-    @media (max-width: 420px) {
-      .btn-group { grid-template-columns: 1fr; }
-      .bmc-floating-btn span { display: none; }
-      .bmc-floating-btn { padding: 12px; border-radius: 50%; }
-    }
+    :root { --bg:#0b0f19; --card:#151c2e; --border:#243049; --text:#f1f5f9; --text-muted:#94a3b8; --accent:#38bdf8; --bmc-yellow:#FFDD00; --bmc-text:#000000; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    html { -webkit-text-size-adjust:100%; }
+    body { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; background-color:var(--bg); color:var(--text); line-height:1.6; padding-bottom:120px; }
+    header { background:var(--card); border-bottom:1px solid var(--border); padding:28px 20px; text-align:center; }
+    header h1 { font-size:clamp(1.4rem,4vw,1.8rem); letter-spacing:-0.5px; color:#fff; }
+    header p { color:var(--text-muted); font-size:0.95rem; margin-top:6px; }
+    .container { max-width:680px; margin:32px auto; padding:0 16px; display:flex; flex-direction:column; gap:24px; }
+    .card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:24px; box-shadow:0 4px 18px rgba(0,0,0,0.35); }
+    .card-tag { display:inline-block; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.8px; font-weight:700; color:var(--accent); margin-bottom:10px; }
+    .card h2 { font-size:1.3rem; margin-bottom:12px; color:#fff; }
+    .card p { color:var(--text-muted); font-size:0.96rem; margin-bottom:16px; }
+    .btn-group { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:8px; }
+    button { background:#1e293b; color:var(--text); border:1px solid var(--border); padding:11px 14px; border-radius:8px; font-size:0.9rem; font-weight:600; cursor:pointer; transition:all 0.2s ease; }
+    button:hover { background:#334155; border-color:var(--accent); }
+    button.primary { background:rgba(56,189,248,0.15); border-color:var(--accent); color:var(--accent); }
+    button.primary:hover { background:rgba(56,189,248,0.25); }
+    .bmc-floating-btn { position:fixed; bottom:max(16px,env(safe-area-inset-bottom)); right:max(16px,env(safe-area-inset-right)); background:var(--bmc-yellow); color:var(--bmc-text); text-decoration:none; font-weight:700; font-size:0.92rem; padding:12px 20px; border-radius:50px; box-shadow:0 6px 20px rgba(0,0,0,0.45); display:flex; align-items:center; gap:10px; z-index:1000; transition:transform 0.2s ease, box-shadow 0.2s ease; }
+    .bmc-floating-btn:hover { transform:translateY(-3px); box-shadow:0 10px 26px rgba(255,221,0,0.45); }
+    .bmc-floating-btn svg { width:20px; height:20px; fill:currentColor; flex-shrink:0; }
+    #copy-toast { position:fixed; bottom:88px; left:50%; transform:translateX(-50%); background:rgba(15,23,42,0.95); border:1px solid var(--accent); color:var(--text); padding:8px 16px; border-radius:20px; font-size:0.85rem; display:none; z-index:1000; max-width:calc(100% - 32px); text-align:center; }
+    @media (max-width:420px) { .btn-group{grid-template-columns:1fr;} .bmc-floating-btn span{display:none;} .bmc-floating-btn{padding:12px;border-radius:50%;} }
   </style>
 </head>
 <body>
@@ -202,83 +52,86 @@
     <h1>Daily Curious Minds</h1>
     <p>Distilled insights in physics, logic, and existential philosophy.</p>
   </header>
-
   <main class="container">
     <article class="card">
       <span class="card-tag" id="fact-category">Quantum Physics</span>
-      <h2 id="fact-title">Wave-Particle Duality &amp; The Act of Measurement</h2>
-      <p id="fact-content">
-        In quantum mechanics, particles such as electrons behave as probabilistic waves until an interaction or measurement forces their state vector to collapse into a single eigenvalue. Reality remains probabilistic until observed.
-      </p>
+      <h2 id="fact-title">Wave-Particle Duality & The Act of Measurement</h2>
+      <p id="fact-content">In quantum mechanics, particles such as electrons behave as probabilistic waves until an interaction or measurement forces their state vector to collapse into a single eigenvalue. Reality remains probabilistic until observed.</p>
       <div class="btn-group">
         <button type="button" id="shuffle-btn" class="primary">Next Insight</button>
         <button type="button" id="share-btn">Copy for Facebook</button>
       </div>
     </article>
-
-    <article class="card" style="border-color: rgba(255, 221, 0, 0.35); background: rgba(255, 221, 0, 0.04);">
-      <h3 style="font-size: 1.1rem; margin-bottom: 8px; color: #fff;">Enjoying these daily insights?</h3>
-      <p style="font-size: 0.9rem; margin-bottom: 14px;">
-        Curating and validating knowledge takes focused time. If you appreciate having an ad-free curiosity feed, you can support this work directly:
-      </p>
-      <a
-        href="https://buymeacoffee.com/pratik8405u"
-        target="_blank"
-        rel="noopener noreferrer"
-        style="color: var(--bmc-yellow); font-weight: 700; font-size: 0.95rem; text-decoration: none;"
-      >
-        Support on Buy Me a Coffee →
-      </a>
+    <article class="card" style="border-color:rgba(255,221,0,0.35);background:rgba(255,221,0,0.04);">
+      <h3 style="font-size:1.1rem;margin-bottom:8px;color:#fff;">Enjoying these daily insights?</h3>
+      <p style="font-size:0.9rem;margin-bottom:14px;">Curating and validating knowledge takes focused time. If you appreciate having an ad-free curiosity feed, you can support this work directly:</p>
+      <a href="https://buymeacoffee.com/pratik8405u" target="_blank" rel="noopener noreferrer" style="color:var(--bmc-yellow);font-weight:700;font-size:0.95rem;text-decoration:none;">Support on Buy Me a Coffee →</a>
     </article>
   </main>
-
-  <a
-    href="https://buymeacoffee.com/pratik8405u"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="bmc-floating-btn"
-    aria-label="Buy me a coffee"
-  >
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M20.216 6.415l-.132-.666c-.119-.597-.386-1.163-.787-1.636-.44-.52-.988-.894-1.62-1.077-1.127-.329-3.235-.55-5.677-.55-2.441 0-4.55.221-5.677.55-.632.183-1.18.557-1.62 1.077-.4.473-.668 1.039-.787 1.636l-.132.666c-.198.995-.084 2.012.333 2.946.398.892 1.026 1.635 1.815 2.15v5.334c0 1.258.455 2.457 1.282 3.376.827.918 1.948 1.43 3.125 1.43h3.322c1.177 0 2.298-.512 3.125-1.43.827-.919 1.282-2.118 1.282-3.376v-5.334c.789-.515 1.417-1.258 1.815-2.15.417-.934.531-1.951.333-2.946zm-2.029 2.073c-.22.493-.57.904-1.015 1.192v-5.06c1.123.238 1.764.918 1.868 1.442.096.486.04.992-.153 1.446l-.7 2.98z"/>
-    </svg>
+  <a href="https://buymeacoffee.com/pratik8405u" target="_blank" rel="noopener noreferrer" class="bmc-floating-btn" aria-label="Buy me a coffee">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.216 6.415l-.132-.666c-.119-.597-.386-1.163-.787-1.636-.44-.52-.988-.894-1.62-1.077-1.127-.329-3.235-.55-5.677-.55-2.441 0-4.55.221-5.677.55-.632.183-1.18.557-1.62 1.077-.4.473-.668 1.039-.787 1.636l-.132.666c-.198.995-.084 2.012.333 2.946.398.892 1.026 1.635 1.815 2.15v5.334c0 1.258.455 2.457 1.282 3.376.827.918 1.948 1.43 3.125 1.43h3.322c1.177 0 2.298-.512 3.125-1.43.827-.919 1.282-2.118 1.282-3.376v-5.334c.789-.515 1.417-1.258 1.815-2.15.417-.934.531-1.951.333-2.946zm-2.029 2.073c-.22.493-.57.904-1.015 1.192v-5.06c1.123.238 1.764.918 1.868 1.442.096.486.04.992-.153 1.446l-.7 2.98z"/></svg>
     <span>Buy me a coffee</span>
   </a>
-
   <div id="copy-toast" role="status" aria-live="polite">Copied formatted text to clipboard!</div>
-
   <script>
     const SITE_URL = "https://pratik2691984.github.io/knowledge-hub/";
     const BMC_URL = "https://buymeacoffee.com/pratik8405u";
-
     const KNOWLEDGE_VAULT = [
-      {
-        category: "Quantum Physics",
-        title: "Wave-Particle Duality & Measurement",
-        content: "In quantum mechanics, particles behave as probabilistic waves until an observation collapses the state vector into a single eigenvalue. Reality remains probabilistic until observed."
-      },
-      {
-        category: "Cognitive Psychology",
-        title: "The Pratfall Effect",
-        content: "Competent individuals become noticeably more relatable and liked after making a small, clumsy mistake. Flawless perfection creates psychological distance; authentic vulnerability builds trust."
-      },
-      {
-        category: "Cosmology",
-        title: "Cosmic Microwave Background",
-        content: "Roughly 1% of the analog static snow on old televisions is relic radiation directly from the Big Bang itself, stretched over 13.8 billion years into the microwave spectrum."
-      },
-      {
-        category: "Game Theory",
-        title: "Tit-for-Tat Strategy",
-        content: "In iterated Prisoner's Dilemmas, the most robust long-term winning rule is: begin cooperatively, retaliate immediately if cheated, and forgive instantly as soon as the other party cooperates again."
-      },
-      {
-        category: "Stoic Philosophy",
-        title: "Amor Fati (Loving One's Fate)",
-        content: "Popularized by Nietzsche from ancient Stoic thought, Amor Fati demands not merely enduring adversity, but actively embracing every obstacle as the exact fuel needed for growth."
-      }
+      { category: "Quantum Physics", title: "Wave-Particle Duality & Measurement", content: "In quantum mechanics, particles behave as probabilistic waves until an observation collapses the state vector into a single eigenvalue. Reality remains probabilistic until observed." },
+      { category: "Cognitive Psychology", title: "The Pratfall Effect", content: "Competent individuals become noticeably more relatable and liked after making a small, clumsy mistake. Flawless perfection creates psychological distance; authentic vulnerability builds trust." },
+      { category: "Cosmology", title: "Cosmic Microwave Background", content: "Roughly 1% of the analog static snow on old televisions is relic radiation directly from the Big Bang itself, stretched over 13.8 billion years into the microwave spectrum." },
+      { category: "Game Theory", title: "Tit-for-Tat Strategy", content: "In iterated Prisoner's Dilemmas, the most robust long-term winning rule is: begin cooperatively, retaliate immediately if cheated, and forgive instantly as soon as the other party cooperates again." },
+      { category: "Stoic Philosophy", title: "Amor Fati (Loving One's Fate)", content: "Popularized by Nietzsche from ancient Stoic thought, Amor Fati demands not merely enduring adversity, but actively embracing every obstacle as the exact fuel needed for growth." }
     ];
-
     let currentIndex = 0;
     const categoryEl = document.getElementById("fact-category");
-    const titleEl = document.getElementById("titleEl");
+    const titleEl = document.getElementById("fact-title");
+    const contentEl = document.getElementById("fact-content");
+    const shuffleBtn = document.getElementById("shuffle-btn");
+    const shareBtn = document.getElementById("share-btn");
+    const toast = document.getElementById("copy-toast");
+    function renderFact(idx) {
+      const fact = KNOWLEDGE_VAULT[idx];
+      categoryEl.textContent = fact.category;
+      titleEl.textContent = fact.title;
+      contentEl.textContent = fact.content;
+    }
+    function showToast(message) {
+      toast.textContent = message;
+      toast.style.display = "block";
+      setTimeout(function () { toast.style.display = "none"; }, 2200);
+    }
+    async function copyShareText() {
+      const fact = KNOWLEDGE_VAULT[currentIndex];
+      const shareUrl = window.location.href.indexOf("github.io") !== -1 ? window.location.href : SITE_URL;
+      const shareText = "\uD83D\uDCA1 " + fact.title + "\n\n" + fact.content + "\n\n\uD83D\uDD17 Explore more daily knowledge:\n" + shareUrl + "\n\n\u2615 Support the creator:\n" + BMC_URL;
+      try {
+        await navigator.clipboard.writeText(shareText);
+        showToast("Copied formatted text to clipboard!");
+      } catch (err) {
+        const ta = document.createElement("textarea");
+        ta.value = shareText;
+        ta.setAttribute("readonly", "");
+        ta.style.position = "fixed";
+        ta.style.left = "-9999px";
+        document.body.appendChild(ta);
+        ta.select();
+        try {
+          document.execCommand("copy");
+          showToast("Copied formatted text to clipboard!");
+        } catch (e2) {
+          showToast("Copy failed — select and copy manually.");
+        }
+        document.body.removeChild(ta);
+      }
+    }
+    shuffleBtn.addEventListener("click", function () {
+      currentIndex = (currentIndex + 1) % KNOWLEDGE_VAULT.length;
+      renderFact(currentIndex);
+    });
+    shareBtn.addEventListener("click", function () {
+      copyShareText();
+    });
+  </script>
+</body>
+</html>
